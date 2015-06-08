@@ -10,7 +10,16 @@ pre-requisites
 ```
 # docker 1.3+ and docker-compose installed
 sudo apt-get update && sudo apt-get install -y python-pip
-sudo pip install docker-compose
+pip install requests==2.5.3 && pip install docker-compose
+```
+
+You can also install all the the required pre-requirsites, including docker running the following script
+
+```bash
+curl -q https://raw.githubusercontent.com/andrewmichaelsmith/manuka/master/requirements.sh > requirements.sh
+chmod +x requirements.sh
+
+./requirements.sh
 ```
 
 setup
